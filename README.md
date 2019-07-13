@@ -4,6 +4,7 @@
  ### vue-element-admin 模板
   [vue-admin-template](https://github.com/PanJiaChen/vue-admin-template.git)
   包括此项目的运行方式。
+  实在不会玩的请先去学习[vue-element-admin的使用](https://panjiachen.gitee.io/vue-element-admin-site/zh/guide/#%E5%AE%89%E8%A3%85)
 ### 要求
  此项目要会小程序云开发
  [小程序云开发](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
