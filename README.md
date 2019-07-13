@@ -13,6 +13,8 @@
 2. 配置小程序appid和secret 位置：src/api/user.js->getAccessToken中appid和secret 的换成你自己的。
 3. 自己的小程序云环境要首先搭建好，要不然云函数是调用不起来的。
 
+### 注意
+此项目不能部署，直接在本地运行。部署可能会有代理问题。
 ### 小程序讨论群
 
 [群](https://developers.weixin.qq.com/community/develop/doc/000cc6600f0610559fc857f6c5600c)
