@@ -15,6 +15,7 @@
 
 ### 注意
 此项目不能部署，直接在本地运行。部署可能会有代理问题。
+
 ### 小程序讨论群
 
 [群](https://developers.weixin.qq.com/community/develop/doc/000cc6600f0610559fc857f6c5600c)
