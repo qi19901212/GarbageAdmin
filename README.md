@@ -11,7 +11,7 @@
  [外部调用云函数和云数据库](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-http-api/) 
 ### 配置
 1. 需要和[Garbage](https://github.com/qi19901212/Garbage)配合使用
-2. 配置小程序appid和secret 位置：src/api/user.js->getAccessToken中appid和secret 的换成你自己的。
+2. 配置小程序appid和secret 位置：src/api/user.js->getAccessToken中appid和secret 的换成你自己的。以及里面的云环境env 改掉
 3. 自己的小程序云环境要首先搭建好，要不然云函数是调用不起来的。
 
 ### 注意
