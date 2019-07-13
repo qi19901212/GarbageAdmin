@@ -22,12 +22,6 @@ export function getInfo(token) {
   })
 }
 
-export function logout() {
-  return request({
-    url: '/user/logout',
-    method: 'post'
-  })
-}
 // grant_type=client_credential&appid=APPID&secret=APPSECRET
 export function getAccessToken() {
   const params = {

@@ -46,7 +46,7 @@ export default {
     }
   },
   created(){
-    this.getAccessToken()
+    // this.getAccessToken()
   },
   methods: {
     getAccessToken() {

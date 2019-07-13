@@ -97,7 +97,7 @@ export const constantRoutes = [
     },
     children: [
       {
-        path: 'https://github.com/qi19901212/Garbage',
+        path: 'https://github.com/qi19901212/GarbageAdmin',
         meta: { title: '此项目开源地址', icon: 'link' }
       },
       {
