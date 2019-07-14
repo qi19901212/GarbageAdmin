@@ -1,5 +1,16 @@
 <template>
   <div class="app-container">
+    <div class="filter-container">
+      <el-button
+        v-waves
+        :loading="downloadLoading"
+        class="filter-item"
+        type="primary"
+        icon="el-icon-download"
+        @click="handleDownload"
+      >导出表格</el-button>
+    </div>
+
     <el-table
       :key="tableKey"
       v-loading="listLoading"
@@ -60,6 +71,7 @@
 
 <script>
 import Pagination from "@/components/Pagination";
+import { parseTime } from '@/utils'
 
 export default {
   name: "ComplexTable",
@@ -105,7 +117,36 @@ export default {
           });
         });
     },
-
+    handleDownload() {
+      this.downloadLoading = true;
+      import("@/vendor/Export2Excel").then(excel => {
+        const tHeader = ["ID",  "时间", "名称", "分类"];
+        const filterVal = [
+          "_id",
+          "ctime",
+          "name",
+          "sortId"
+        ];
+        const data = this.formatJson(filterVal, this.list);
+        excel.export_json_to_excel({
+          header: tHeader,
+          data,
+          filename: "垃圾名称"
+        });
+        this.downloadLoading = false;
+      });
+    },
+    formatJson(filterVal, jsonData) {
+      return jsonData.map(v =>
+        filterVal.map(j => {
+          if (j === "ctime") {
+            return parseTime(v[j]);
+          } else {
+            return v[j];
+          }
+        })
+      );
+    },
     onEdit(params) {
       console.log("======" + JSON.stringify(params));
       this.$router.push({
