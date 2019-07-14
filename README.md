@@ -1,5 +1,5 @@
 # Garbage-Admin
-—> 此管理系统采用vue-element-admin 模板。主要功能是管理小程序云开发环境的数据。前一段时间开发了一个垃圾分类的小程序采用了云开发环境。有用户提交数据，管理起来相当麻烦。工作中用的都是电脑，手机屏幕太小管理起来不方便，于是开发此系统。方便把自己的小程序数据整理，丰富垃圾库。
+> 此管理系统采用vue-element-admin 模板。主要功能是管理小程序云开发环境的数据。前一段时间开发了一个垃圾分类的小程序采用了云开发环境。有用户提交数据，管理起来相当麻烦。工作中用的都是电脑，手机屏幕太小管理起来不方便，于是开发此系统。方便把自己的小程序数据整理，丰富垃圾库。
  
  ### vue-element-admin 模板
   [vue-admin-template](https://github.com/PanJiaChen/vue-admin-template.git)
@@ -22,13 +22,9 @@
 [群](https://developers.weixin.qq.com/community/develop/doc/000cc6600f0610559fc857f6c5600c)
 
 ### 打赏
-<<<<<<< HEAD
-有钱的捧个钱场没钱的捧个人场。辛辛苦苦赚钱的请绕道，不忍心。觉得我实在太辛苦而且正好有的小金库，土豪来看下面。
-
-=======
 有钱的捧个钱场没钱的捧个人场。辛辛苦苦赚钱的请绕道，不忍心。觉得我实在太辛苦而且正好有小金库的，来来来看下面。
 ![哈哈](https://github.com/qi19901212/GarbageAdmin/blob/master/qqqqqq.jpeg)
->>>>>>> 2fce6503460de28ff5ec680f0035381397617afa
+
 
 
 
