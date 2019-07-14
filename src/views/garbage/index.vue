@@ -2,7 +2,6 @@
   <div class="app-container">
     <div class="filter-container">
       <el-button
-        v-waves
         :loading="downloadLoading"
         class="filter-item"
         type="primary"
@@ -82,6 +81,7 @@ export default {
       list: null,
       total: 40,
       listLoading: true,
+      downloadLoading:false,
       listQuery: {
         page: 1,
         limit: 10
