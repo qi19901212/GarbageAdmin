@@ -36,20 +36,24 @@ const actions = {
 
   accessToken({ commit }) {
     return new Promise((resolve, reject) => {
-      getAccessToken().then(response => {
-        console.log("==accessToken===" + JSON.stringify(response))
-        const { access_token } = response
-        console.log("==data==AAA=" + access_token)
-        if (access_token != undefined && access_token != null && access_token != "") {
-          commit('SET_TOKEN', access_token)
-          setTokenExpiresTime(access_token, 2 * 3600 - 100)//微信为二个小时，确保一定失效
-        } else {
-          // this.$
-        }
+      if(getToken()){
         resolve()
-      }).catch(error => {
-        reject(error)
-      })
+      }else{
+        getAccessToken().then(response => {
+          console.log("==accessToken===" + JSON.stringify(response))
+          const { access_token } = response
+          console.log("==data==AAA=" + access_token)
+          if (access_token != undefined && access_token != null && access_token != "") {
+            commit('SET_TOKEN', access_token)
+            setTokenExpiresTime(access_token, 2 * 3600 - 100)//微信为二个小时，确保一定失效
+          } else {
+            // this.$
+          }
+          resolve()
+        }).catch(error => {
+          reject(error)
+        })
+      }
     })
   },
 

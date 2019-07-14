@@ -76,6 +76,7 @@ export default {
                       message: "添加成功",
                       type: "success"
                     });
+                    this.$router.push({ path: '/commit/index'})
                   } else if(obj.data.errCode == 1){
                     this.$message.error(obj.data.errMsg);
                   }else{
