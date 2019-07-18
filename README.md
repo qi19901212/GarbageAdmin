@@ -23,7 +23,7 @@
 
 ### 打赏
 有钱的捧个钱场没钱的捧个人场。辛辛苦苦赚钱的请绕道，不忍心。觉得我实在太辛苦而且正好有小金库的，来来来看下面。
-![哈哈](https://github.com/qi19901212/GarbageAdmin/blob/master/qqqqqq.jpeg)
+![哈哈](https://github.com/qi19901212/GarbageAdmin/blob/master/qqqqqq.png)
 
 
 
