@@ -26,5 +26,6 @@
 ![哈哈](https://github.com/qi19901212/GarbageAdmin/blob/master/qqqqqq.png)
 
 
-
+### 协议
+[LICENSE](https://github.com/qi19901212/GarbageAdmin/blob/master/LICENSE)
 
